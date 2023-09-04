@@ -7,6 +7,15 @@ import (
 
 func TestSelectorSort(t *testing.T) {
 	arr := []int{10, 2, 4, 7, 7, 9, 2, 90}
-	SelectorSort(arr)
+
+	sign := 1
+
+	switch sign {
+	case 0:
+		SelectorSort(arr)
+	case 1:
+		BubbleSort(arr)
+	}
+
 	fmt.Println(arr)
 }
